@@ -29,7 +29,7 @@ public class AccountPageTest extends BaseTest {
 	}
 
 	
-	@Description("Verify Account Page Title")
+	@Description("Verify Account Page Title...")
 	@Owner("Sarah")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
