@@ -22,8 +22,8 @@ public class AccountPage {
 	private WebDriver driver;
 	private ElementUtils eUtil;
 
-	private By acctPageHeaders = By.cssSelector("div[id='content'] h3");
-	private By searchProduct = By.cssSelector("input[placeholder='Search1']");
+	private By acctPageHeaders = By.cssSelector("div[id='content'] h2");
+	private By searchProduct = By.cssSelector("input[placeholder='Search']");
 	private By searchProductButton = By.cssSelector("div[id='search'] button");
 
 	public AccountPage(WebDriver driver) {
