@@ -66,8 +66,8 @@ pipeline {
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Feb2024POMSeries.git'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/test_regression.xml"
+                    git 'https://github.com/SaranyaRC16/OpenCartSeleniumAutomationFramework.git'
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng.xml"
                 }
             }
             post {
@@ -127,8 +127,8 @@ pipeline {
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Feb2024POMSeries.git'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/test_sanity.xml"
+                    git 'https://github.com/SaranyaRC16/OpenCartSeleniumAutomationFramework.git'
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng.xml"
                 }
                 script {
                     env.SANITY_TESTS_RAN = true
